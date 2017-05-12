@@ -12,9 +12,12 @@
 		8EB497091EC5C4B000A06FDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB497071EC5C4B000A06FDD /* Main.storyboard */; };
 		8EB4970B1EC5C4B000A06FDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB4970A1EC5C4B000A06FDD /* Assets.xcassets */; };
 		8EB4970E1EC5C4B000A06FDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB4970C1EC5C4B000A06FDD /* LaunchScreen.storyboard */; };
+		EF14BAECB648424A86384190 /* Pods_AudioFingerPrinting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6934D86A0565DC1A1FE6E051 /* Pods_AudioFingerPrinting.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B9E7A838422B3E28E3F4555 /* Pods-AudioFingerPrinting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioFingerPrinting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioFingerPrinting/Pods-AudioFingerPrinting.debug.xcconfig"; sourceTree = "<group>"; };
+		6934D86A0565DC1A1FE6E051 /* Pods_AudioFingerPrinting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioFingerPrinting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB497001EC5C4B000A06FDD /* AudioFingerPrinting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioFingerPrinting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB497031EC5C4B000A06FDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EB497051EC5C4B000A06FDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		8EB4970A1EC5C4B000A06FDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EB4970D1EC5C4B000A06FDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EB4970F1EC5C4B000A06FDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		945B29BC50E367FA9B976E29 /* Pods-AudioFingerPrinting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioFingerPrinting.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioFingerPrinting/Pods-AudioFingerPrinting.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF14BAECB648424A86384190 /* Pods_AudioFingerPrinting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B8426725025B63E74E2AD83 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B9E7A838422B3E28E3F4555 /* Pods-AudioFingerPrinting.debug.xcconfig */,
+				945B29BC50E367FA9B976E29 /* Pods-AudioFingerPrinting.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8EB496F71EC5C4B000A06FDD = {
 			isa = PBXGroup;
 			children = (
 				8EB497021EC5C4B000A06FDD /* AudioFingerPrinting */,
 				8EB497011EC5C4B000A06FDD /* Products */,
+				6B8426725025B63E74E2AD83 /* Pods */,
+				AE531A514D47381C0D6615D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = AudioFingerPrinting;
 			sourceTree = "<group>";
 		};
+		AE531A514D47381C0D6615D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6934D86A0565DC1A1FE6E051 /* Pods_AudioFingerPrinting.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EB497121EC5C4B000A06FDD /* Build configuration list for PBXNativeTarget "AudioFingerPrinting" */;
 			buildPhases = (
+				DD05F823C4209F749B6EC038 /* [CP] Check Pods Manifest.lock */,
 				8EB496FC1EC5C4B000A06FDD /* Sources */,
 				8EB496FD1EC5C4B000A06FDD /* Frameworks */,
 				8EB496FE1EC5C4B000A06FDD /* Resources */,
+				0F3DE63043CC7F899C8D6424 /* [CP] Embed Pods Frameworks */,
+				57FA04C46D151EC44BAF682B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F3DE63043CC7F899C8D6424 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioFingerPrinting/Pods-AudioFingerPrinting-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57FA04C46D151EC44BAF682B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioFingerPrinting/Pods-AudioFingerPrinting-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD05F823C4209F749B6EC038 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8EB496FC1EC5C4B000A06FDD /* Sources */ = {
@@ -259,10 +334,12 @@
 		};
 		8EB497131EC5C4B000A06FDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B9E7A838422B3E28E3F4555 /* Pods-AudioFingerPrinting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HYH5GJW8EQ;
 				INFOPLIST_FILE = AudioFingerPrinting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.ironsheep.AudioFingerPrinting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,10 +349,12 @@
 		};
 		8EB497141EC5C4B000A06FDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 945B29BC50E367FA9B976E29 /* Pods-AudioFingerPrinting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HYH5GJW8EQ;
 				INFOPLIST_FILE = AudioFingerPrinting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.ironsheep.AudioFingerPrinting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
